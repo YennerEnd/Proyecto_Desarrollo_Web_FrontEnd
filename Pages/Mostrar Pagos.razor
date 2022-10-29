@@ -1,0 +1,43 @@
+﻿@page "/mostrarpagos"
+
+<h3>Buscar Pagos</h3>
+<h6>Ingrese el numero de pago:</h6>
+
+<form>
+    <fieldset>
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="idpago">Numero de Pago</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="idpago" id="idpago">
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Pago encontrado');">Mostrar Pago</button>
+</div>
+
+<br />
+<h6>O bien, mostrar todos los Pagos registrados:</h6>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Pagos Encontradas');">Mostrar Todos</button>
+</div>
+
+<div> <br />Datos del pago<br /> </div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID Movimiento</th>
+            <th>Fecha</th>
+            <th>Total Pagado</th>
+            <th>ID Factura</th>
+            <th>ID Cliente</th>
+        </tr>
+    </thead>
+</table>

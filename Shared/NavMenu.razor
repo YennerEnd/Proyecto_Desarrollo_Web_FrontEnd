@@ -1,0 +1,106 @@
+﻿@page "/menu"
+
+<div class="top-row pl-5 navbar navbar-dark">
+    <a class="navbar-brand" href="">ProyectoDW</a>
+    <button class="navbar-toggler" @onclick="ToggleNavMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    <ul class="nav flex-column">
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Inicio
+            </NavLink>
+        </li>
+
+        <li class="nav-item px-sm-1">
+            <NavLink class="nav-link" href="">
+                <span class="oi oi-list-rich" aria-hidden="false"></span> Clientes
+            </NavLink>
+        </li>
+
+        <li class="nav-item px-sm-2">
+            <NavLink class="nav-link" href="agregarcliente">
+                <span aria-hidden="true"></span> Agregar Cliente
+            </NavLink>
+        </li>
+
+        <li class="nav-item px-sm-2">
+            <NavLink class="nav-link" href="editarcliente">
+                <span aria-hidden="true"></span> Editar Cliente
+            </NavLink>
+        </li>
+
+        <li class="nav-item px-sm-2">
+            <NavLink class="nav-link" href="mostrarclientes">
+                <span aria-hidden="true"></span> Mostrar Clientes
+            </NavLink>
+        </li>
+
+        <li class="nav-item px-sm-1">
+            <NavLink class="nav-link" href="">
+                <span class="oi oi-list-rich" aria-hidden="false"></span> Facturacion
+            </NavLink>
+        </li>
+
+        <li class="nav-item px-sm-2">
+            <NavLink class="nav-link" href="agregarfactura">
+                <span aria-hidden="true"></span> Agregar Factura
+            </NavLink>
+        </li>
+
+        <li class="nav-item px-sm-2">
+            <NavLink class="nav-link" href="mostrarfactura">
+                <span aria-hidden="true"></span> Mostrar Factura
+            </NavLink>
+        </li>
+
+        <li class="nav-item px-sm-1">
+            <NavLink class="nav-link" href="">
+                <span class="oi oi-list-rich" aria-hidden="false"></span> Movimientos de Caja
+            </NavLink>
+        </li>
+
+        <li class="nav-item px-sm-2">
+            <NavLink class="nav-link" href="pagar">
+                <span aria-hidden="true"></span> Pagar Factura
+            </NavLink>
+        </li>
+
+        <li class="nav-item px-sm-2">
+            <NavLink class="nav-link" href="mostrarpagos">
+                <span aria-hidden="true"></span> Buscar Pagos
+            </NavLink>
+        </li>
+
+        <li class="nav-item px-sm-1">
+            <NavLink class="nav-link" href="">
+                <span class="oi oi-list-rich" aria-hidden="false"></span> Estados de Cuenta
+            </NavLink>
+        </li>
+
+        <li class="nav-item px-sm-2">
+            <NavLink class="nav-link" href="mostrarestado">
+                <span aria-hidden="true"></span> Mostrar Estados
+            </NavLink>
+        </li>
+
+    </ul>
+</div>
+
+
+
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

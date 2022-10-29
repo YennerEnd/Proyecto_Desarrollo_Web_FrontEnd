@@ -1,0 +1,42 @@
+﻿@page "/agregarcliente"
+
+<h3>Agregar Cliente</h3>
+<h6>Ingrese los datos del cliente que desea agregar:</h6>
+
+<form>
+    <fieldset>
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="nombre">Nombre del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="nombre" id="nombre">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="telefono">Numero de Telefono</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="telefono" id="telefono">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="direccion">Direccion del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="direccion" id="direccion">
+            </div>
+        </div> 
+    </fieldset>
+</form>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Cliente Agregado Exitosamente');">Agregar Cliente</button>
+</div>

@@ -1,0 +1,90 @@
+﻿@page "/editarcliente"
+
+<h3>Editar Cliente</h3>
+<h6>Ingrese los datos del cliente que desea editar:</h6>
+
+<form>
+    <fieldset>
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="idcliente">ID Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="idcliente" id="idcliente">
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Cliente Encontrado');">Buscar Cliente</button>
+</div>
+
+<hr />
+<div>Cliente:</div>
+<br />
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Telefono</th>
+            <th>Direccion</th>
+        </tr>
+    </thead>
+</table>
+
+<hr />
+<h6>Ingrese los nuevos datos del cliente a editar:</h6>
+
+<form>
+    <fieldset>
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="idcliente">ID Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="idcliente" id="idcliente">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="nombre">Nombre del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="nombre" id="nombre">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="telefono">Numero de Telefono</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="telefono" id="telefono">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="direccion">Direccion del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="direccion" id="direccion">
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+<br />
+
+<div class="row content">
+    <button type="submit" onclick="alert('Cliente Editado Exitosamente');">Confirmar Cambios</button>
+</div>

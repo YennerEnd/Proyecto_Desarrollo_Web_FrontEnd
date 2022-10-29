@@ -1,0 +1,80 @@
+﻿@page "/agregarfactura"
+
+<h3>Agregar Factura</h3>
+<h6>Ingrese los datos de la factura:</h6>
+
+<form>
+    <fieldset>       
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="descripcion">Descripcion</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="descripcion" id="descripcion">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="fecha">Fecha</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="date" name="fecha" id="fecha">
+            </div>
+        </div>
+        
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="vencimiento">Vencimiento</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="date" name="vencimiento" id="vencimiento">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="total">Total</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="total" id="total">
+            </div>
+        </div>
+        
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="idcliente">ID del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="idcliente" id="idcliente">
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Factura Registrada Exitosamente');">Agregar Factura</button>
+</div>
+
+<hr />
+<div>Factura:</div>
+<br />
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID Factura</th>
+            <th>Estado</th>
+            <th>Descripcion</th>
+            <th>Fecha</th>
+            <th>Vencimiento</th>
+            <th>Total</th>
+            <th>ID Cliente</th>
+        </tr>
+    </thead>
+</table>

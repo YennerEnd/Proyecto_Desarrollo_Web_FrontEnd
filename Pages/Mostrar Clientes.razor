@@ -1,0 +1,44 @@
+﻿@page "/mostrarclientes"
+
+<h3>Mostrar Clientes</h3>
+<h6>Ingrese el ID del cliente que desea buscar:</h6>
+
+<form>
+    <fieldset>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="idcliente">ID Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="idcliente" id="idcliente">
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Cliente Encontrado');">Buscar Cliente</button>
+</div>
+
+<br />
+<h6>O bien, mostrar todos los Clientes:</h6>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Clientes Encontrados');">Mostrar Todos los Clientes</button>
+</div>
+
+
+<div> <br />Clientes: <br /> </div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Telefono</th>
+            <th>Direccion</th>
+        </tr>
+    </thead>
+</table>

@@ -1,0 +1,42 @@
+﻿@page "/pagar"
+
+<h3>Pagar Factura</h3>
+<h6>Ingrese los datos del cliente:</h6>
+
+<form>
+    <fieldset>
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="fecha">Fecha</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="date" name="fecha" id="fecha">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="monto">Monto</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="monto" id="monto">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="factura">Numero de Factura</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="factura" id="factura">
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Factura pagada');">Pagar Factura</button>
+</div>

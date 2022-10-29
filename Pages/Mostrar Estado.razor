@@ -1,0 +1,38 @@
+﻿@page "/mostrarestado"
+
+<h3>Mostrar Estados de Cuenta</h3>
+<h6>Ingrese el ID del cliente para mostrar su estado de cuenta:</h6>
+
+<form>
+    <fieldset>
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="idcliente">ID del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="idcliente" id="idcliente">
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Estado de Cuenta Generado');">Mostrar Estado de Cuenta</button>
+</div>
+
+<div> <br />Estado de Cuenta: <br /> </div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID Factura</th>
+            <th>Estado</th>
+            <th>Descripcion</th>
+            <th>Fecha</th>
+            <th>Vencimiento</th>
+            <th>Total</th>
+            <th>ID Cliente</th>
+        </tr>
+    </thead>
+</table>

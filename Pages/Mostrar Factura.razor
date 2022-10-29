@@ -1,0 +1,47 @@
+﻿@page "/mostrarfactura"
+
+<h3>Mostrar Factura</h3>
+<h6>Ingrese el ID de la factura que desea consultar:</h6>
+
+<form>
+    <fieldset>
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="idfactura">Numero de Factura</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="idfactura" id="idfactura">
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Mostrando Factura');">Mostrar Factura</button>
+</div>
+
+<br />
+<h6>O bien, mostrar todas las Facturas:</h6>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Facturas Encontradas');">Mostrar Todas</button>
+</div>
+
+
+<div> <br />Factura: <br /> </div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID Factura</th>
+            <th>Estado</th>
+            <th>Descripcion</th>
+            <th>Fecha</th>
+            <th>Vencimiento</th>
+            <th>Total</th>
+            <th>ID Cliente</th>
+        </tr>
+    </thead>
+</table>
+
